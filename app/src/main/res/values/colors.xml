@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#51d8c7</color>
+    <color name="colorPrimaryDark">#51d8c7</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBackground">#7b64e7</color>
+    <color name="colorText">#0b0b0b</color>
+    <color name="colorTextHint">#51d8c7</color>
+    <color name="taxi_back">#f9e79f</color>
+    <color name="red">#f03a3a</color>
+</resources>

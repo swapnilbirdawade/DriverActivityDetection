@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back222"
+    android:weightSum="1"
+    tools:background="@drawable/back222">
+
+    <TextView
+        android:id="@+id/currentSpeed"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTime"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/titleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Time"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="124dp"
+        android:layout_height="61dp"
+        android:layout_alignEnd="@+id/currentSpeed"
+        android:layout_alignTop="@+id/start"
+        android:background="@drawable/button2"
+        android:text="Stop"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="124dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/currentSpeed"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button2"
+        android:text="Start"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/speedvalue"
+        android:layout_width="290dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:hint="Enter speed"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="288dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/currentSpeed"
+        android:layout_marginTop="203dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Send" />
+
+</RelativeLayout>

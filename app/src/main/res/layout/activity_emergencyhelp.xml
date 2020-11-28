@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/emergency"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/panic"
+        android:layout_width="232dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/message"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/button2"
+        android:text="Send"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/message"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:text="Please Help..."
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
+        tools:textColor="@android:color/black"
+        tools:textColorHint="@android:color/black" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout
+
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/TF_location"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/B_search"
+        android:ems="10"
+        android:hint="Search Hospital"
+        android:inputType="textPersonName" />
+
+
+    <Button
+        android:id="@+id/B_search"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:onClick="onClick"
+        android:text="Go"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/select"
+        android:hint="Select Hospital"
+        android:layout_above="@+id/send"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/B_hopistals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Find Nearest Hospitals"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/select"
+        android:layout_alignParentStart="true"
+        tools:background="@drawable/button" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.priyanka.mapsdemo.MapsActivity"
+        android:layout_below="@+id/TF_location"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/select" />
+
+    <Button
+        android:id="@+id/B_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Direction"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/select"
+        android:layout_toEndOf="@+id/TF_location"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/button"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distance"
+        android:layout_below="@+id/TF_location"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
